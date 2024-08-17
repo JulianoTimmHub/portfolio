@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
+html {
   background-color: #303446;
+  color: white;
+  height: 100%;
+  font-family: monospace;
+}
+
+body {
+  background-color: #303446;
+  color: white;
+  font-family: monospace;
+  height: 100%;
+  padding: 30px;
 }
