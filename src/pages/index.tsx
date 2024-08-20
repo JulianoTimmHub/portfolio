@@ -1,3 +1,5 @@
+import { AboutMe } from "@/components/aboutMe";
+import { Contacts } from "@/components/contacts";
 import Image from "next/image";
 
 export default function Home() {
@@ -10,16 +12,17 @@ export default function Home() {
             <p className="text-xl m-2">Sou um desenvolvedor Full Stack apaixonado por programação</p>
           </div>
         </div>
-        <div className="w-6/12 flex items-center justify-center">
+        <div className="w-6/12 flex items-center justify-center flex-col">
           <div className="border-4 rounded-full p-3 border-blue-900">
             <Image className="rounded-full" alt="" width={300} height={200} src="/profile.png" />
           </div>
+          <Contacts />
         </div>
       </section>
       <section className="w-full flex items-center justify-evenly flex-col mt-10 mb-10">
         <div className="w-full flex items-center justify-center flex-col mt-10 mb-10">
           <h1 className="text-4xl m-2 text-left">Projetos recentes</h1>
-          <div className="w-4/12 h-1 bg-gray-500 rounded-full	" />
+          <div className="w-4/12 h-1.5 rounded-full bg-blue-700" />
         </div>
 
         <div className="w-full relative flex items-center justify-evenly flex-nowrap mt-20 mb-20">
@@ -64,6 +67,10 @@ export default function Home() {
           </div>
         </div>
 
+      </section>
+
+      <section className="w-full flex items-center justify-center flex-col mt-10 mb-10">
+        <AboutMe />
       </section>
     </main>
   )
