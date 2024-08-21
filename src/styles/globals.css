@@ -11,6 +11,10 @@ html, body {
   font-family: monospace;
 }
 
-body {
-  padding: 30px;
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
 }
