@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   min-height: 100vh;
   margin: 0;
@@ -11,10 +15,12 @@ html, body {
   font-family: monospace;
 }
 
-.tooltip {
-  @apply invisible absolute;
+ol, ul, li, a {
+  text-decoration: none;
 }
 
-.has-tooltip:hover .tooltip {
-  @apply visible z-50;
+.section-nav a {
+	display: inline-block;
+  line-height: 1rem;
+	color: #202020;
 }

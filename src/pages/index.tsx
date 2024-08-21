@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="pt-[70px]">
-      <section className="w-full flex items-center justify-center flex-col mt-10 mb-10">
+    <main className="pt-[100px]">
+      <section id="introduction" className="w-full flex items-center justify-center flex-col mt-10 mb-10">
         <div className="w-full flex items-center justify-center max-[640px]:flex-col">
           <div className="w-6/12 max-[640px]:w-full flex items-center justify-end max-[640px]:justify-center">
             <div className="flex flex-col">
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <Skills />
       </section>
-      <section className="w-full flex items-center justify-evenly flex-col mt-10 mb-10">
+      <section id="projects" className="w-full flex items-center justify-evenly flex-col mt-10 mb-10 pt-[50px]">
         <div className="w-full flex items-center justify-center flex-col mt-10 mb-10">
           <h1 className="text-4xl m-2 text-left">Projetos recentes</h1>
           <div className="w-4/12 h-1.5 rounded-full bg-blue-700" />
@@ -71,7 +71,8 @@ export default function Home() {
 
       </section>
 
-      <section className="w-full flex items-center justify-center flex-col mt-10 mb-10">
+      <section id="aboutMe" className="w-full flex items-center justify-center flex-col mt-10 mb-10">
+        <h1 className="text-4xl m-2">Sobre mim</h1>
         <AboutMe />
       </section>
     </main>
