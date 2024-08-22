@@ -21,6 +21,5 @@ ol, ul, li, a {
 
 .section-nav a {
 	display: inline-block;
-  line-height: 1rem;
-	color: #202020;
+  line-height: 0.5rem;
 }

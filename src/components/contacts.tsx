@@ -1,5 +1,3 @@
-import { Tooltip } from "@nextui-org/react";
-import Image from "next/image"
 import Link from "next/link"
 
 export const Contacts = () => {
@@ -10,13 +8,13 @@ export const Contacts = () => {
     return (
         <div className="w-6/12 flex items-center justify-center flex-nowrap">
             <Link href={github} target="_blank">
-                <Image className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300" alt="" width={40} height={100} src="/github.svg" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/github.svg')] hover:bg-[url('/github-original.svg')] bg-cover w-[40px] h-[40px]" />
             </Link>
             <Link href={linkedin} target="_blank">
-                <Image className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300" alt="" width={40} height={100} src="/linkedin.svg" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/linkedin.svg')] hover:bg-[url('/linkedin-original.svg')] bg-cover w-[40px] h-[40px]" />
             </Link>
             <Link href={whatsapp} target="_blank">
-                <Image className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300" alt="" width={40} height={100} src="/whatsapp.svg" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/whatsapp.svg')] hover:bg-[url('/whatsapp-original.svg')] bg-cover w-[40px] h-[40px]" />
             </Link>
         </div >
     )
