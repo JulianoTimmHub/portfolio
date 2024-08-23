@@ -115,7 +115,10 @@ export default function Home() {
       </section>
 
       <section id="sobre" className="w-full flex items-center justify-center flex-col mt-10 mb-10">
-        <h1 className="text-4xl m-2">Sobre mim</h1>
+        <div className="w-full flex items-center justify-center flex-col mt-10 mb-10">
+          <h1 className="text-4xl m-2 text-left">Sobre mim</h1>
+          <div className="w-4/12 h-1.5 rounded-full bg-[#656783]" />
+        </div>
         <AboutMe />
       </section>
 
