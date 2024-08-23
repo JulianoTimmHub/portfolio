@@ -8,13 +8,13 @@ export const Contacts = () => {
     return (
         <div className="w-6/12 flex items-center justify-center flex-nowrap">
             <Link href={github} target="_blank">
-                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/github.svg')] hover:bg-[url('/github-original.svg')] bg-cover w-[40px] h-[40px]" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
             </Link>
             <Link href={linkedin} target="_blank">
-                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/linkedin.svg')] hover:bg-[url('/linkedin-original.svg')] bg-cover w-[40px] h-[40px]" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin.svg')] hover:bg-[url('/contacts/linkedin-original.svg')] bg-cover w-[40px] h-[40px]" />
             </Link>
             <Link href={whatsapp} target="_blank">
-                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/whatsapp.svg')] hover:bg-[url('/whatsapp-original.svg')] bg-cover w-[40px] h-[40px]" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/whatsapp.svg')] hover:bg-[url('/contacts/whatsapp-original.svg')] bg-cover w-[40px] h-[40px]" />
             </Link>
         </div >
     )

@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <section id="introduction" className="w-full flex items-center justify-center flex-col h-[100vh]">
+      <section id="introduction" className="w-full flex items-center justify-center flex-col">
         <div className="w-full flex items-center justify-center max-[640px]:flex-col p-20">
           <div className="w-6/12 max-[640px]:w-full flex items-center justify-end max-[640px]:justify-center">
             <div className="flex flex-wrap">
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <Skills />
       </section>
-      <section id="projects" className="w-full flex items-center justify-evenly flex-col mt-10 mb-10 pt-[50px]">
+      <section id="projetos" className="w-full flex items-center justify-evenly flex-col mt-10 mb-10 pt-[50px]">
         <div className="w-full flex items-center justify-center flex-col mt-10 mb-10">
           <h1 className="text-4xl m-2 text-left">Projetos em destaque</h1>
           <div className="w-4/12 h-1.5 rounded-full bg-[#656783]" />
@@ -47,7 +47,7 @@ export default function Home() {
               <div className="w-full flex items-center justify-start flex-nowrap">
                 <Tooltip content="Repositório" color="success" offset={-5} closeDelay={1} className="p-1">
                   <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
-                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/github.svg')] hover:bg-[url('/github-original.svg')] bg-cover w-[40px] h-[40px]" />
+                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
                   </Link>
                 </Tooltip>
                 <Tooltip content="Deploy" color="success" offset={-5} closeDelay={1} className="p-1">
@@ -70,7 +70,7 @@ export default function Home() {
               <div className="w-full flex items-center justify-end flex-nowrap">
                 <Tooltip content="Repositório" color="success" offset={-5} closeDelay={1} className="p-1">
                   <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
-                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/github.svg')] hover:bg-[url('/github-original.svg')] bg-cover w-[40px] h-[40px]" />
+                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
                   </Link>
                 </Tooltip>
                 <Tooltip content="Deploy" color="success" offset={-5} closeDelay={1} className="p-1">
@@ -99,7 +99,7 @@ export default function Home() {
               <div className="w-full flex items-center justify-start flex-nowrap">
                 <Tooltip content="Repositório" color="success" offset={-5} closeDelay={1} className="p-1">
                   <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
-                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/github.svg')] hover:bg-[url('/github-original.svg')] bg-cover w-[40px] h-[40px]" />
+                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
                   </Link>
                 </Tooltip>
                 <Tooltip content="Deploy" color="success" offset={-5} closeDelay={1} className="p-1">
@@ -114,10 +114,12 @@ export default function Home() {
 
       </section>
 
-      <section id="aboutMe" className="w-full flex items-center justify-center flex-col mt-10 mb-10">
+      <section id="sobre" className="w-full flex items-center justify-center flex-col mt-10 mb-10">
         <h1 className="text-4xl m-2">Sobre mim</h1>
         <AboutMe />
       </section>
+
+      <Link className="fixed bottom-5 right-5 cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/back-to-top-outlined.svg')] hover:bg-[url('/back-to-top-filled.svg')] bg-cover w-[40px] h-[40px]" href="#inicio" />
     </main>
   )
 }

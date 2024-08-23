@@ -4,12 +4,21 @@ import { Contacts } from "./contacts"
 export const Layout = ({ children }: any) => {
     return (
         <div className="container mx-auto">
-            <header className="w-full fixed top-0 left-0">
-                <nav className="section-nav w-full flex items-center justify-center bg-[#656783]">
+            <header id="inicio" className="w-full">
+                <nav className="section-nav w-full flex items-center justify-center">
                     <div className="w-6/12 flex items-center justify-center gap-4">
-                        <Link className="rounded-none p-2 transition ease-in-out delay-50 hover:scale-110 hover:bg-[#303446] duration-100" href="#aboutMe">Sobre mim</Link>
-                        <Link className="rounded-none p-2 transition ease-in-out delay-50 hover:scale-110 hover:bg-[#303446] duration-100" href="#contacts">Contatos</Link>
-                        <Link className="rounded-none p-2 transition ease-in-out delay-50 hover:scale-110 hover:bg-[#303446] duration-100" href="#projects">Projetos</Link>
+                        <Link className="relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group p-3" href="#sobre">
+                            <span className="w-56 h-48 rounded bg-[#656783] absolute bottom-0 left-0 translate-x-full ease-out duration-300 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span className="relative w-full text-left transition-colors duration-300 ease-in-out">Sobre mim</span>
+                        </Link>
+                        <Link className="relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group p-3" href="#contatos">
+                            <span className="w-56 h-48 rounded bg-[#656783] absolute bottom-0 left-0 translate-x-full ease-out duration-300 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span className="relative w-full text-left transition-colors duration-300 ease-in-out">Contatos</span>
+                        </Link>
+                        <Link className="relative inline-flex items-center justify-start overflow-hidden font-medium transition-all rounded group p-3" href="#projetos">
+                            <span className="w-56 h-48 rounded bg-[#656783] absolute bottom-0 left-0 translate-x-full ease-out duration-300 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+                            <span className="relative w-full text-left transition-colors duration-300 ease-in-out">Projetos</span>
+                        </Link>
                     </div>
                     <Contacts />
                 </nav>
