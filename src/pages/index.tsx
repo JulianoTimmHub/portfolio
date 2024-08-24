@@ -1,4 +1,5 @@
 import { AboutMe } from "@/components/aboutMe";
+import { Sidebar } from "@/components/sidebar";
 import { Skills } from "@/components/skills";
 import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export default function Home() {
 
   return (
     <>
+    <Sidebar />
       <main className="container mx-auto">
         <section id="introduction" className="w-full flex items-center justify-center flex-col">
           <div className="w-full flex items-center justify-center max-[640px]:flex-col p-20">
