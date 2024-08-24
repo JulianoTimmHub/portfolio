@@ -12,11 +12,17 @@ html, body {
   padding: 0;
   background-color: #303446;
   color: white;
+  /* background-color: #ffffff; */
+  /* color: #000000; */
   font-family: monospace;
 }
 
 ol, ul, li, a {
   text-decoration: none;
+}
+
+input {
+  color: #ffffff;
 }
 
 .section-nav a {
