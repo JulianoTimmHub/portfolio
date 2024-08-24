@@ -29,3 +29,19 @@ input {
 	display: inline-block;
   line-height: 0.5rem;
 }
+
+div > .MuiPaper-root {
+  max-width: 70%;
+}
+
+@media (max-width: 400px) {
+  div > .MuiPaper-root {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 640px) {
+  div > .MuiPaper-root {
+    min-width: 40%;
+  }
+}
