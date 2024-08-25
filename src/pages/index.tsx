@@ -37,8 +37,8 @@ export default function Home({ }: any) {
         </section>
         <section id={translator('projetos')} className="w-full flex items-center justify-evenly flex-col mt-10 mb-10">
           <div className="w-full flex items-center justify-center mt-10 mb-10">
-            <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t before:border-gray-200 
-                before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 text-[#303446] dark:text-white dark:before:border-[#656783] dark:after:border-[#656783]">
+            <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t
+                before:me-6 after:flex-1 after:border-t after:ms-6 text-[#303446] dark:text-white before:border-[#303446] after:border-[#303446] dark:before:border-[#656783] dark:after:border-[#656783]">
               {translator('Projetos')}
             </h1>
           </div>
@@ -49,19 +49,32 @@ export default function Home({ }: any) {
             <div className="w-full px-6 py-4 h-96 flex items-start justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:gap-[1rem]">
               <h4 className="font-bold text-xl text-[#303446] dark:text-white mb-2">{translator('Login Boilerplate')}</h4>
               <p className="text-base text-[#303446] dark:text-white">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                {translator('Um boilerplate de login para sistemas web, criado com React, TypeScript e Next.js. Ele oferece funcionalidades essenciais como cadastro de usuários, alteração de senhas e login.')}
               </p>
-              <div className="w-full flex items-center justify-start flex-nowrap">
-                <Tooltip content={translator('Repositório')} color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
-                  <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
-                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
-                  </Link>
-                </Tooltip>
-                <Tooltip content="Deploy" color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
-                  <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
-                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/site.png')] hover:bg-[url('/site-blue.png')] bg-cover w-[40px] h-[40px]" />
-                  </Link>
-                </Tooltip>
+              <div className="w-full flex items-center justify-center flex-nowrap">
+                <div className="w-6/12 flex items-center justify-start flex-nowrap">
+                  <Tooltip content={translator('Repositório')} color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
+                    <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
+                      <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
+                    </Link>
+                  </Tooltip>
+                  <Tooltip content="Deploy" color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
+                    <Link href={'https://github.com/JulianoTimmHub/login-boilerplate-web'} target="_blank">
+                      <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/site.png')] hover:bg-[url('/site-blue.png')] bg-cover w-[40px] h-[40px]" />
+                    </Link>
+                  </Tooltip>
+                </div>
+                <div className="w-6/12 flex items-center justify-end flex-wrap">
+                  <Tooltip content="React" color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
+                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/skills/react-dark.svg')] dark:bg-[url('/skills/react-light.svg')] hover:!bg-[url('/skills/react-original.svg')] bg-cover w-[25px] h-[25px]" />
+                  </Tooltip>
+                  <Tooltip content="TypeScript" color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
+                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/skills/typescript-dark.svg')] dark:bg-[url('/skills/typescript-light.svg')] hover:!bg-[url('/skills/typescript-original.svg')] bg-cover w-[25px] h-[25px]" />
+                  </Tooltip>
+                  <Tooltip content='Next' color="success" offset={-5} closeDelay={1} className="p-1 text-[#303446] dark:text-white">
+                    <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/skills/next-dark.svg')] dark:bg-[url('/skills/next-light.svg')] hover:!bg-[url('/skills/next-original.png')] bg-cover w-[25px] h-[25px]" />
+                  </Tooltip>
+                </div>
               </div>
             </div>
           </div>
@@ -118,9 +131,8 @@ export default function Home({ }: any) {
 
         <section id={translator('sobre')} className="w-full flex items-center justify-center flex-col mt-10 mb-10">
           <div className="w-full flex items-center justify-center mt-10 mb-10">
-            <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t before:border-gray-200 
-                before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 text-[#303446] dark:text-white dark:before:border-[#656783] 
-                dark:after:border-[#656783]">{translator('Sobre')}</h1>
+            <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t 
+                before:me-6 after:flex-1 after:border-t after:ms-6 text-[#303446] dark:text-white before:border-[#303446] after:border-[#303446] dark:before:border-[#656783] dark:after:border-[#656783]">{translator('Sobre')}</h1>
           </div>
           <AboutMe />
         </section>

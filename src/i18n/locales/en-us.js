@@ -19,6 +19,7 @@ export default {
     'Sua mensagem': 'Your message',
     'Olá Juliano, tudo bem ?': 'Hello Juliano, how are you?',
     'exemplo@gmail.com': 'example@gmail.com',
-    'Enviar mensagem': 'Send message'
+    'Enviar mensagem': 'Send message',
+    'Um boilerplate de login para sistemas web, criado com React, TypeScript e Next.js. Ele oferece funcionalidades essenciais como cadastro de usuários, alteração de senhas e login.': 'A login boilerplate for web systems, created with React, TypeScript and Next.js. It offers essential functionalities such as user registration, changing passwords and login.'
   }
 }

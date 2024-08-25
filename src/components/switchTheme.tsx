@@ -17,13 +17,13 @@ export const SwitchTheme = () => {
   }
 
   return (
-    <label className='themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-[#656783] p-[5.3px]'>
+    <label className='themeSwitcherTwo shadow-card relative inline-flex cursor-pointer select-none items-center justify-center rounded-md bg-[#656783] max-[640px]:bg-[#8689AD] p-[5.3px]'>
       <input
         type='checkbox'
         className='sr-only'
       />
       <span
-        className={`flex items-center rounded py-2 px-[18px] font-medium ${themeSelected === 'light' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD]'} ${
+        className={`flex items-center rounded py-2 px-[18px] font-medium ${themeSelected === 'light' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD] max-[640px]:hover:bg-[#656783]'} ${
           themeSelected === 'light' ? 'text-primary bg-[#303446]' : 'text-body-color'
         }`}
         onClick={() => handleCheckboxChange('light')}
@@ -51,7 +51,7 @@ export const SwitchTheme = () => {
         </svg>
       </span>
       <span
-        className={`flex items-center rounded py-2 px-[18px] font-medium ${themeSelected === 'dark' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD]'} ${
+        className={`flex items-center rounded py-2 px-[18px] font-medium ${themeSelected === 'dark' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD] max-[640px]:hover:bg-[#656783]'} ${
           themeSelected === 'dark' ? 'text-primary bg-[#303446]' : 'text-body-color'
         }`}
         onClick={() => handleCheckboxChange('dark')}

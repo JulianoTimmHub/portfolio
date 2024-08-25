@@ -24,7 +24,6 @@ export const Sidebar = () => {
   const DrawerList = (
     <Box sx={{ maxWidth: '100%' }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {/* {['Github', 'Linkedin', 'WhatsApp'].map((text, index) => ( */}
         <ListItem key='Github' disablePadding>
           <ListItemButton>
             <ListItemIcon>
@@ -55,7 +54,6 @@ export const Sidebar = () => {
             <ListItemText primary='WhatsApp' />
           </ListItemButton>
         </ListItem>
-        {/* ))} */}
       </List>
       <Divider />
       <List>
