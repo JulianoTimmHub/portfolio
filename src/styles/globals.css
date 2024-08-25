@@ -10,10 +10,6 @@ html, body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: #303446;
-  color: white;
-  /* background-color: #ffffff; */
-  /* color: #000000; */
   font-family: monospace;
 }
 

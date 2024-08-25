@@ -1,10 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useTheme } from "next-themes";
 
-export const SwitchColor = () => {
-  const [isChecked, setIsChecked] = useState(false)
+export const SwitchTheme = () => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [themeSelected, setThemeSelected] = useState<string>(theme || 'dark');
 
-  const handleCheckboxChange = () => {
-    setIsChecked(!isChecked)
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted)
+    return null;
+
+  const handleCheckboxChange = (theme: string) => {
+    setThemeSelected(theme)
+    setTheme(theme)
   }
 
   return (
@@ -12,12 +21,12 @@ export const SwitchColor = () => {
       <input
         type='checkbox'
         className='sr-only'
-        checked={isChecked}
-        onChange={handleCheckboxChange}
       />
       <span
-        className={`flex items-center rounded py-2 px-[18px] font-medium ${isChecked && 'hover:bg-[#8689AD]'} ${!isChecked ? 'text-primary bg-[#303446]' : 'text-body-color'
-          }`}
+        className={`flex items-center rounded py-2 px-[18px] font-medium ${themeSelected === 'light' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD]'} ${
+          themeSelected === 'light' ? 'text-primary bg-[#303446]' : 'text-body-color'
+        }`}
+        onClick={() => handleCheckboxChange('light')}
       >
         <svg
           width='16'
@@ -42,8 +51,10 @@ export const SwitchColor = () => {
         </svg>
       </span>
       <span
-        className={`flex items-center rounded py-2 px-[18px] font-medium ${!isChecked && 'hover:bg-[#8689AD]'} ${isChecked ? 'text-primary bg-[#303446]' : 'text-body-color'
-          }`}
+        className={`flex items-center rounded py-2 px-[18px] font-medium ${themeSelected === 'dark' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD]'} ${
+          themeSelected === 'dark' ? 'text-primary bg-[#303446]' : 'text-body-color'
+        }`}
+        onClick={() => handleCheckboxChange('dark')}
       >
         <svg
           width='16'
