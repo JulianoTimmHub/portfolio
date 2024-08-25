@@ -1,12 +1,14 @@
 import { Tooltip } from "@nextui-org/react";
+import { useI18nContext } from '../hooks/useI18nContext';
 
 export const Skills = () => {
+  const { translator } = useI18nContext();
   return (
     <div className="w-full flex items-center justify-center flex-col pt-[0rem]">
       <div className="w-full flex items-center justify-center mt-10 mb-10">
         <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t before:border-gray-200 
                 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:before:border-[#656783] 
-                dark:after:border-[#656783]">Habilidades</h1>
+                dark:after:border-[#656783]">{translator('Habilidades')}</h1>
       </div>
       <div className="w-full flex items-center justify-center flex-wrap pt-[2rem]">
         <Tooltip content="Java" color="success" offset={10} closeDelay={1} className="p-1">

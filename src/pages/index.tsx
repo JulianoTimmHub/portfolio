@@ -4,8 +4,11 @@ import { Skills } from "@/components/skills";
 import { Tooltip } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useI18nContext } from '../hooks/useI18nContext';
 
-export default function Home() {
+export default function Home({ }: any) {
+  const { translator } = useI18nContext();
+
   const linkedin = 'https://www.linkedin.com/in/juliano-henrique-timm-583322238/';
   const github = 'https://github.com/JulianoTimmHub';
   const whatsapp = 'https://api.whatsapp.com/send/?phone=45999455504&text&type=phone_number&app_absent=0';
@@ -17,13 +20,13 @@ export default function Home() {
           <div className="w-full flex items-center justify-center max-[640px]:flex-col pl-[5rem] pr-[5rem] max-[768px]:pt-[0rem]">
             <div className="w-6/12 max-[640px]:w-full flex items-center justify-end max-[640px]:justify-center">
               <div className="flex flex-wrap max-[640px]:justify-center">
-                <h1 className="text-5xl m-2">Olá, me chamo</h1>
+                <h1 className="text-5xl m-2">{translator('Olá, me chamo')}</h1>
                 <div className="flex flex-nowrap">
                   <h1 className="text-5xl m-2 text-[#656783]"><strong>{'<'}</strong></h1>
                   <h1 className="text-5xl m-2"><strong>Juliano</strong></h1>
                   <h1 className="text-5xl m-2 text-[#656783]"><strong>{'/>'}</strong></h1>
                 </div>
-                <p className="text-xl m-2">Desenvolvedor Full Stack há mais de 2 anos.</p>
+                <p className="text-xl m-2">{translator('Desenvolvedor Full Stack há mais de 2 anos.')}</p>
               </div>
             </div>
             <div className="w-6/12 flex items-center justify-center flex-col max-[640px]:hidden">
@@ -38,14 +41,14 @@ export default function Home() {
           <div className="w-full flex items-center justify-center mt-10 mb-10">
             <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t before:border-gray-200 
                 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:before:border-[#656783] 
-                dark:after:border-[#656783]">Projetos</h1>
+                dark:after:border-[#656783]">{translator('Projetos')}</h1>
           </div>
           <div className="w-full flex items-center justify-evenly flex-nowrap max-[640px]:flex-col p-20 max-[640px]:p-[2rem]">
             <div className="w-full mx-auto h-auto overflow-hidden rounded-lg">
               <Image className="w-full h-96 max-[640px]:h-[16rem] object-cover cursor-pointer z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100" width={500} height={100} src="/profile.png" alt="Sunset in the mountains" />
             </div>
             <div className="w-full px-6 py-4 h-96 flex items-start justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:gap-[1rem]">
-              <h4 className="font-bold text-xl mb-2">Login Boilerplate</h4>
+              <h4 className="font-bold text-xl mb-2">{translator('Login Boilerplate')}</h4>
               <p className="text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </p>
@@ -66,7 +69,7 @@ export default function Home() {
 
           <div className="w-full flex items-center justify-evenly flex-nowrap max-[640px]:flex-col-reverse p-20 max-[640px]:p-[2rem]">
             <div className="w-full px-6 py-4 h-96 flex items-end justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:items-start max-[640px]:gap-[1rem]">
-              <h4 className="font-bold text-xl mb-2">Api de controle financeiro pessoal</h4>
+              <h4 className="font-bold text-xl mb-2">{translator('Api de controle financeiro pessoal')}</h4>
               <p className="text-base text-right max-[640px]:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </p>
@@ -93,7 +96,7 @@ export default function Home() {
               <Image className="w-full h-96 max-[640px]:h-[16rem] object-cover cursor-pointer z-0 rounded-lg scale-110 transition-all duration-300 hover:scale-100" width={500} height={100} src="/profile.png" alt="Sunset in the mountains" />
             </div>
             <div className="w-full px-6 py-4 h-96 flex items-start justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:gap-[1rem]">
-              <h4 className="font-bold text-xl mb-2">Meu banco fácil</h4>
+              <h4 className="font-bold text-xl mb-2">{translator('Meu banco fácil')}</h4>
               <p className="text-base">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
               </p>
@@ -118,7 +121,7 @@ export default function Home() {
           <div className="w-full flex items-center justify-center mt-10 mb-10">
             <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t before:border-gray-200 
                 before:me-6 after:flex-1 after:border-t after:border-gray-200 after:ms-6 dark:text-white dark:before:border-[#656783] 
-                dark:after:border-[#656783]">Sobre</h1>
+                dark:after:border-[#656783]">{translator('Sobre')}</h1>
           </div>
           <AboutMe />
         </section>
@@ -144,14 +147,14 @@ export default function Home() {
           <p className="mb-8 lg:mb-16 font-light text-center sm:text-xl">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
           <form action="#" className="space-y-8">
             <div>
-              <label htmlFor="email" className="block mb-2 font-medium">Seu e-mail</label>
+              <label htmlFor="email" className="block mb-2 font-medium">{translator('Seu email')}</label>
               <input type="email" id="email" className="border border-gray-300 rounded-lg w-full p-2.5 dark:bg-gray-700 dark:border-gray-600" placeholder="name@flowbite.com" required />
             </div>
             <div className="sm:col-span-2">
-              <label htmlFor="message" className="block mb-2 font-medium">Your message</label>
+              <label htmlFor="message" className="block mb-2 font-medium">{translator('Sua mensagem')}</label>
               <textarea id="message" rows={6} className="block p-2.5 w-full rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600" placeholder="Leave a comment..."></textarea>
             </div>
-            <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#0d6efd] hover:bg-[#0b5ed7] sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700">Send message</button>
+            <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#0d6efd] hover:bg-[#0b5ed7] sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700">{translator('Enviar mensagem')}</button>
           </form>
         </div>
       </footer>
