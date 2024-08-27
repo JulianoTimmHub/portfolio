@@ -14,10 +14,10 @@ export const Skills = () => {
       </div>
       <div className="w-full flex items-center justify-center flex-wrap pt-[2rem]">
         <Tooltip content="Java" color="success" offset={10} closeDelay={1} className="p-1">
-          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/java.svg')] hover:bg-[url('/skills/java-original.svg')] bg-cover w-[50px] h-[50px]" />
+          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/java-dark.svg')] dark:bg-[url('/skills/java-light.svg')] hover:!bg-[url('/skills/java-original.svg')] bg-cover w-[50px] h-[50px]" />
         </Tooltip>
         <Tooltip content="JavaScript" color="success" offset={10} closeDelay={1} className="p-1">
-          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/javascript.svg')] hover:bg-[url('/skills/javascript-original.svg')] bg-cover w-[50px] h-[50px]" />
+          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/javascript-dark.svg')] dark:bg-[url('/skills/javascript-light.svg')] hover:!bg-[url('/skills/javascript-original.svg')] bg-cover w-[50px] h-[50px]" />
         </Tooltip>
         <Tooltip content="React" color="success" offset={10} closeDelay={1} className="p-1">
           <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/react-dark.svg')] dark:bg-[url('/skills/react-light.svg')] hover:!bg-[url('/skills/react-original.svg')] bg-cover w-[50px] h-[50px]" />
@@ -26,10 +26,10 @@ export const Skills = () => {
           <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/typescript-dark.svg')] dark:bg-[url('/skills/typescript-light.svg')] hover:!bg-[url('/skills/typescript-original.svg')] bg-cover w-[50px] h-[50px]" />
         </Tooltip>
         <Tooltip content="Postgres" color="success" offset={10} closeDelay={1} className="p-1">
-          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/postgres.svg')] hover:bg-[url('/skills/postgres-original.svg')] bg-cover w-[50px] h-[50px]" />
+          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/postgres-dark.svg')] dark:bg-[url('/skills/postgres-light.svg')] hover:!bg-[url('/skills/postgres-original.svg')] bg-cover w-[50px] h-[50px]" />
         </Tooltip>
         <Tooltip content="Docker" color="success" offset={10} closeDelay={1} className="p-1">
-          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/docker.svg')] hover:bg-[url('/skills/docker-original.svg')] bg-cover w-[50px] h-[50px]" />
+          <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/docker-dark.svg')] dark:bg-[url('/skills/docker-light.svg')] hover:!bg-[url('/skills/docker-original.svg')] bg-cover w-[50px] h-[50px]" />
         </Tooltip>
       </div>
     </div>

@@ -28,7 +28,7 @@ export const Sidebar = () => {
           <ListItemButton>
             <ListItemIcon>
               <Link href={ELinks.GITHUB} target="_blank">
-                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github.svg')] hover:bg-[url('/contacts/github-original.svg')] bg-cover w-[30px] h-[30px]" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github-dark.svg')] dark:bg-[url('/contacts/github-light.svg')] hover:!bg-[url('/contacts/github-original.svg')] bg-cover w-[30px] h-[30px]" />
               </Link>
             </ListItemIcon>
             <ListItemText primary='Github' />
@@ -38,7 +38,7 @@ export const Sidebar = () => {
           <ListItemButton>
             <ListItemIcon>
               <Link href={ELinks.LINKEDIN} target="_blank">
-                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin.svg')] hover:bg-[url('/contacts/linkedin-original.svg')] bg-cover w-[30px] h-[30px]" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin-dark.svg')] dark:bg-[url('/contacts/linkedin-light.svg')] hover:!bg-[url('/contacts/linkedin-original.svg')] bg-cover w-[30px] h-[30px]" />
               </Link>
             </ListItemIcon>
             <ListItemText primary='linkedin' />
@@ -48,7 +48,7 @@ export const Sidebar = () => {
           <ListItemButton>
             <ListItemIcon>
               <Link href={ELinks.WHATSAPP} target="_blank">
-                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/whatsapp.svg')] hover:bg-[url('/contacts/whatsapp-original.svg')] bg-cover w-[30px] h-[30px]" />
+                <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/whatsapp-dark.svg')] dark:bg-[url('/contacts/whatsapp-light.svg')] hover:!bg-[url('/contacts/whatsapp-original.svg')] bg-cover w-[30px] h-[30px]" />
               </Link>
             </ListItemIcon>
             <ListItemText primary='WhatsApp' />
