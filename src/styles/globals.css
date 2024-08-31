@@ -49,3 +49,7 @@ div > .MuiPaper-root {
 .css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
   background-color: light-dark(#efedea, #656783) !important;
 }
+
+.MuiListItemText-primary {
+  color: light-dark(#303446, #efedea) !important;
+}

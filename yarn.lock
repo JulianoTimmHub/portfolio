@@ -487,15 +487,10 @@
   dependencies:
     glob "10.3.10"
 
-"@next/swc-linux-x64-gnu@14.2.5":
+"@next/swc-win32-x64-msvc@14.2.5":
   version "14.2.5"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.2.5.tgz"
-  integrity sha512-8XFikMSxWleYNryWIjiCX+gU201YS+erTUidKdyOVYi5qUQo/gRxv/3N1oZFCgqpesN6FPeqGM72Zve+nReVXQ==
-
-"@next/swc-linux-x64-musl@14.2.5":
-  version "14.2.5"
-  resolved "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-14.2.5.tgz"
-  integrity sha512-6QLwi7RaYiQDcRDSU/os40r5o06b5ue7Jsk5JgdRBGGp8l37RZEh9JsLSM8QF0YDsgcosSeHjglgqi25+m04IQ==
+  resolved "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.2.5.tgz"
+  integrity sha512-tEQ7oinq1/CjSG9uSTerca3v4AZ+dFa+4Yu6ihaG8Ud8ddqLQgFGcnwYls13H5X5CPDPZJdYxyeMui6muOLd4g==
 
 "@nextui-org/accordion@2.0.38":
   version "2.0.38"
@@ -1151,7 +1146,7 @@
     "@react-types/shared" "3.23.1"
     clsx "^1.2.1"
 
-"@nextui-org/system@>=2.0.0", "@nextui-org/system@>=2.1.0", "@nextui-org/system@2.2.5":
+"@nextui-org/system@^2.2.5", "@nextui-org/system@>=2.0.0", "@nextui-org/system@>=2.1.0", "@nextui-org/system@2.2.5":
   version "2.2.5"
   resolved "https://registry.npmjs.org/@nextui-org/system/-/system-2.2.5.tgz"
   integrity sha512-nrX6768aiyWtpxX3OTFBIVWR+v9nlMsC3KaBinNfek97sNm7gAfTHi7q5kylE3L5yIMpNG+DclAKpuxgDQEmvw==
@@ -1184,7 +1179,7 @@
     "@react-types/grid" "3.2.6"
     "@react-types/table" "3.9.5"
 
-"@nextui-org/tabs@2.0.35":
+"@nextui-org/tabs@^2.0.35", "@nextui-org/tabs@2.0.35":
   version "2.0.35"
   resolved "https://registry.npmjs.org/@nextui-org/tabs/-/tabs-2.0.35.tgz"
   integrity sha512-K6uDZbJwn1qLRw8XeBS2TwGQl9zKXg3Q1ShLzVG2IjTGHGNAn9lwkUzn0FNUNaU1GK2o8wOyKhX7K02J3Ev5fw==
@@ -1204,7 +1199,7 @@
     "@react-types/tabs" "3.3.7"
     scroll-into-view-if-needed "3.0.10"
 
-"@nextui-org/theme@>=2.1.0", "@nextui-org/theme@>=2.2.0", "@nextui-org/theme@2.2.9":
+"@nextui-org/theme@^2.2.9", "@nextui-org/theme@>=2.1.0", "@nextui-org/theme@>=2.2.0", "@nextui-org/theme@2.2.9":
   version "2.2.9"
   resolved "https://registry.npmjs.org/@nextui-org/theme/-/theme-2.2.9.tgz"
   integrity sha512-TN2I9sMriLaj00pXsIMlg19+UHeOdjzS2JV0u4gjL14mSbQl5BYNxgbvU3gbMqkZZQ6OpwT4RnT8RS+ks6TXCw==
@@ -3719,10 +3714,10 @@ foreground-child@^3.1.0:
     cross-spawn "^7.0.0"
     signal-exit "^4.0.1"
 
-framer-motion@>=10.17.0:
-  version "11.3.28"
-  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-11.3.28.tgz"
-  integrity sha512-dqhoawipEAjqdv32zbv72sOMJZjol7dROWn7t/FOq23WXJ40O4OUybgnO2ldnuS+3YquSn8xO/KKRavZ+TBVOQ==
+framer-motion@^11.3.31, framer-motion@>=10.17.0:
+  version "11.3.31"
+  resolved "https://registry.npmjs.org/framer-motion/-/framer-motion-11.3.31.tgz"
+  integrity sha512-Xmxs08WBXnc2tNzNZbFSpquI33lvleJg4Y+hmZ+vFkn+laN9ZnR3gbZnNGKDtuz7c/x3u8dLg05OU3EhLobCsg==
   dependencies:
     tslib "^2.4.0"
 

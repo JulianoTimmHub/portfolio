@@ -5,14 +5,14 @@ export const Skills = () => {
   const { translator, languageSelected } = useI18nContext();
 
   return (
-    <div className="w-full flex items-center justify-center flex-col pt-[0rem]">
-      <div className="w-full flex items-center justify-center mt-10 mb-10">
+    <div className="w-full flex items-center justify-center mt-10 mb-10 flex-col">
+      <div className="w-full flex items-center justify-center mt-[1rem] mb-[1rem]">
         <h1 className="text-4xl m-2 text-center pl-[5rem] pr-[5rem] max-[640px]:pl-[2rem] max-[640px]:pr-[2rem] w-[-webkit-fill-available] flex items-center before:flex-1 before:border-t 
                 before:me-6 after:flex-1 after:border-t after:ms-6 text-[#303446] dark:text-white before:border-[#303446] after:border-[#303446] dark:before:border-[#656783] dark:after:border-[#656783]">
           {translator(languageSelected === 'pt-BR' ? 'Habilidades' : 'Skills')}
         </h1>
       </div>
-      <div className="w-full flex items-center justify-center flex-wrap pt-[2rem]">
+      <div className="w-full flex items-center justify-center flex-wrap pl-[2rem] pr-[2rem]">
         <Tooltip content="Java" color="success" offset={10} closeDelay={1} className="p-1">
           <div className="cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-[url('/skills/java-dark.svg')] dark:bg-[url('/skills/java-light.svg')] hover:!bg-[url('/skills/java-original.svg')] bg-cover w-[50px] h-[50px]" />
         </Tooltip>

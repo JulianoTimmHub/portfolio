@@ -41,7 +41,7 @@ export const Sidebar = () => {
                 <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin-dark.svg')] dark:bg-[url('/contacts/linkedin-light.svg')] hover:!bg-[url('/contacts/linkedin-original.svg')] bg-cover w-[30px] h-[30px]" />
               </Link>
             </ListItemIcon>
-            <ListItemText primary='linkedin' />
+            <ListItemText primary='linkedin' color='#ffffff' />
           </ListItemButton>
         </ListItem>
         <ListItem key='WhatsApp' disablePadding>
