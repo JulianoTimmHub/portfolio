@@ -24,7 +24,7 @@ export default function Home({ }: any) {
                   <h1 className="text-5xl text-[#303446] dark:text-white m-2"><strong>Juliano</strong></h1>
                   <h1 className="text-5xl m-2 text-[#656783]"><strong>{'/>'}</strong></h1>
                 </div>
-                <p className="text-xl text-[#303446] dark:text-white m-2">{translator('Desenvolvedor Full Stack há mais de 2 anos.')}</p>
+                <p className="text-xl text-[#303446] dark:text-white m-2">{translator('Desenvolvedor Full Stack profissional há mais de 2 anos.')}</p>
               </div>
             </div>
             <div className="w-6/12 flex items-center justify-center flex-col max-[640px]:hidden">
@@ -89,9 +89,13 @@ export default function Home({ }: any) {
               <label htmlFor="email" className="block mb-2 font-medium text-white">{translator('Seu email')}</label>
               <input type="email" id="email" className="border border-gray-300 rounded-lg w-full p-2.5 dark:bg-[#303446] dark:border-gray-600" placeholder={translator('exemplo@gmail.com')} required />
             </div>
+            <div>
+              <label htmlFor="subject" className="block mb-2 font-medium text-white">{translator('Assunto')}</label>
+              <input type="text]" id="subject" className="border border-gray-300 rounded-lg w-full p-2.5 dark:bg-[#303446] dark:border-gray-600" placeholder={translator('O que você gostaria de discutir?')} required />
+            </div>
             <div className="sm:col-span-2">
               <label htmlFor="message" className="block mb-2 font-medium text-white">{translator('Sua mensagem')}</label>
-              <textarea id="message" rows={6} className="block p-2.5 w-full rounded-lg border border-gray-300 dark:bg-[#303446] dark:border-gray-600" placeholder={translator('Olá Juliano, tudo bem ?')}></textarea>
+              <textarea id="message" rows={6} className="block p-2.5 w-full rounded-lg border border-gray-300 dark:bg-[#303446] dark:border-gray-600" placeholder={translator('Olá Juliano, tudo bem?')}></textarea>
             </div>
             <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#0d6efd] hover:bg-[#0b5ed7] sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700">{translator('Enviar mensagem')}</button>
           </form>
