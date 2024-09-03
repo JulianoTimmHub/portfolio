@@ -1,4 +1,4 @@
-import { I18nType } from "@/types/i18nType";
+import { I18nType } from "@/types/types";
 import { createContext, useState } from "react";
 import { useTranslation } from 'react-i18next';
 

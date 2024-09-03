@@ -5,15 +5,18 @@ import { I18nProvider } from "../context/i18nContext";
 import { Layout } from "@/components/Layout";
 import "@/styles/globals.css";
 import '../i18n'
+import { SendEmailProvider } from "@/context/sendEmailContext";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <NextUIProvider>
       <ThemeProvider attribute="class">
         <I18nProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <SendEmailProvider>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
+          </SendEmailProvider>
         </I18nProvider>
       </ThemeProvider>
     </NextUIProvider>
