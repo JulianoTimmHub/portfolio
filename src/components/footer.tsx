@@ -1,14 +1,13 @@
+import { useEffect } from "react";
 import Link from "next/link";
-import { ELinks } from "@/enum/e-links";
-import { useI18nContext } from "@/hooks/useI18nContext";
-import { useSendEmailContext } from "@/hooks/useSendEmailContext";
-import { SnackbarMessage } from "./snackbar";
-
 import { useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup";
 import { string, object } from 'yup';
+import { useI18nContext } from "@/hooks/useI18nContext";
+import { useSendEmailContext } from "@/hooks/useSendEmailContext";
+import { ELinks } from "@/enum/e-links";
 import { ContactFormType } from "@/types/types";
-import { useEffect } from "react";
+import { SnackbarMessage } from "./snackbar";
 
 export const Footer = () => {
   const { translator } = useI18nContext();
@@ -44,7 +43,7 @@ export const Footer = () => {
         </div>
         <div className="w-full flex items-center justify-center gap-[3rem] max-[640px]:justify-between max-[640px]:gap-[0rem]">
           <Link href={ELinks.GITHUB} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
-            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github-light.svg')] dark:bg-[url('/contacts/github-light.svg')] hover:!bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]"></div>
+            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github-light.svg')] dark:bg-[url('/contacts/github-light.svg')] hover:!bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
             <p className="font-normal text-gray-200">Github</p>
           </Link>
           <Link href={ELinks.LINKEDIN} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">

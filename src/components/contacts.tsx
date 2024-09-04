@@ -2,7 +2,6 @@ import Link from "next/link";
 import { ELinks } from '../enum/e-links';
 
 export const Contacts = () => {
-
     return (
         <>
             <Link href={ELinks.GITHUB} target="_blank">

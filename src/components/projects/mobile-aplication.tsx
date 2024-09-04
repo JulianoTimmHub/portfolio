@@ -1,7 +1,7 @@
-import { useI18nContext } from "@/hooks/useI18nContext";
-import { Tooltip } from "@nextui-org/react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
+import { Tooltip } from "@nextui-org/react";
+import { useI18nContext } from "@/hooks/useI18nContext";
 
 export const MobileApplication = () => {
   const { translator } = useI18nContext();

@@ -6,11 +6,6 @@ export const SnackbarMessage = ({statusEmail}: any) => {
   const [open, setOpen] = useState<boolean>(true);
   const { closeSnackbarEmail } = useSendEmailContext();
 
-  // useEffect(() => {
-  //   if (status.message) 
-  //     setOpen(true);
-  // }, [status.message, setOpen])
-
   const closeSnackbar = (): void => {
     setOpen(false);
     closeSnackbarEmail();
