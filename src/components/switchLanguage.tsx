@@ -15,14 +15,14 @@ export const SwitchLanguage = () => {
           }`}
           onClick={() => handleChangeLanguage('pt-BR')}
         >
-          <a className={`${languageSelected !== 'pt-BR' ? "bg-[url('/brazil-original.png')]" : "bg-[url('/brazil-original.png')]"} bg-cover w-[20px] h-[20px]`} />
+          <a className="bg-[url('/brazil.png')] bg-cover w-[20px] h-[20px]" />
         </span>
         <span onClick={() => handleChangeLanguage('en-US')}
           className={`flex items-center space-x-[6px] rounded py-2 px-[18px] text-sm font-medium ${languageSelected === 'en-US' ? 'hover:bg-[#303446]' : 'hover:bg-[#8689AD] max-[640px]:hover:bg-[#656783]'} ${
             languageSelected === 'en-US' ? 'text-primary bg-[#303446]' : 'text-body-color'
           }`}
         >
-         <a className={`${languageSelected === 'en-US' ? "bg-[url('/usa-original.png')]" : "bg-[url('/usa-original.png')]"} bg-cover w-[20px] h-[20px]`} />
+         <a className="bg-[url('/usa.png')] bg-cover w-[20px] h-[20px]" />
         </span>
       </label>
   )

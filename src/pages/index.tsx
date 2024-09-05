@@ -13,7 +13,7 @@ export default function Home({ }: any) {
   return (
     <main className="container mx-auto">
 
-      <section id={translator('introduction')} className="w-full flex items-center justify-center flex-col max-[640px]:gap-[3rem]">
+      <section id={translator('introduction')} className="w-full flex items-center justify-center flex-col max-[640px]:gap-[3rem] mt-[5rem] mb-[5rem] max-[640px]:mt-[2rem] max-[640px]:mb-[2rem]">
         <div className="w-full flex items-center justify-center max-[640px]:flex-col pl-[5rem] pr-[5rem] max-[768px]:pt-[0rem]">
           <div className="w-6/12 max-[640px]:w-full flex items-center justify-end max-[640px]:justify-center">
             <div className="flex flex-wrap max-[640px]:justify-center">
@@ -28,10 +28,13 @@ export default function Home({ }: any) {
           </div>
           <div className="w-6/12 flex items-center justify-center flex-col max-[640px]:hidden">
             <div className="rounded-full p-3 border-blue-900">
-              <Image className="rounded-full" alt="" width={400} height={200} src="/header.gif" />
+              <Image className="" alt="" width={350} height={350} src="/top-image.svg" />
             </div>
           </div>
         </div>
+      </section>
+
+      <section className="w-full flex items-center justify-center flex-col max-[640px]:gap-[3rem] mt-[5rem] mb-[5rem] max-[640px]:mt-[2rem] max-[640px]:mb-[2rem]">
         <Skills />
       </section>
 

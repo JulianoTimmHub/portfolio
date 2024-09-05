@@ -22,6 +22,9 @@ export default {
     'Olá Juliano, tudo bem?': 'Hello Juliano, how are you?',
     'exemplo@gmail.com': 'example@gmail.com',
     'Enviar mensagem': 'Send message',
-    'Um boilerplate de login para sistemas web, criado com React, TypeScript e Next.js. Ele oferece funcionalidades essenciais como cadastro de usuários, alteração de senhas e login.': 'A login boilerplate for web systems, created with React, TypeScript and Next.js. It offers essential functionalities such as user registration, changing passwords and login.'
+    'Um boilerplate de login para sistemas web, criado com React, TypeScript e Next.js. Ele possui funcionalidades essenciais como cadastro de usuários, alteração de senhas e login.': 'A login boilerplate for web systems, created with React, TypeScript and Next.js. It offers essential functionalities such as user registration, changing passwords and login.',
+    'Um portfólio no qual viso mostrar minhas habilidades e experiências, desenvolvido com React, TypeScript, Next.js e TailwindCSS. Ele oferece uma visão clara de quem sou e dos meus conhecimentos.': 'A portfolio in which I aim to showcase my skills and experiences, developed with React, TypeScript, Next.js and TailwindCSS. It offers a clear view of who I am and my knowledge.',
+    'API de controle financeiro com funcionalidades de login, gerenciamento de receitas e despesas, acompanhamento de saldos e cadastro de metas. Desenvolvida com TypeScript, Nest.js, Prisma e MongoDB.': 'Financial control API with login features, income and expense management, balance monitoring and goal registration. Developed with TypeScript, Nest.js, Prisma and MongoDB.',
+    'Aplicativo mobile de controle financeiro com recursos de login, gestão de receitas e despesas, monitoramento de saldos e criação de metas. Criado com React Native, TypeScript e Expo.': 'Mobile financial control application with login features, income and expense management, balance monitoring and goal creation. Created with React Native, TypeScript and Expo.'
   }
 }

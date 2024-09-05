@@ -43,15 +43,15 @@ export const Footer = () => {
         </div>
         <div className="w-full flex items-center justify-center gap-[3rem] max-[640px]:justify-between max-[640px]:gap-[0rem]">
           <Link href={ELinks.GITHUB} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
-            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github-light.svg')] dark:bg-[url('/contacts/github-light.svg')] hover:!bg-[url('/contacts/github-original.svg')] bg-cover w-[40px] h-[40px]" />
+            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github-light.svg')] dark:bg-[url('/contacts/github-light.svg')] hover:!bg-[url('/contacts/github.svg')] bg-cover w-[40px] h-[40px]" />
             <p className="font-normal text-gray-200">Github</p>
           </Link>
           <Link href={ELinks.LINKEDIN} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
-            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin-light.svg')] dark:bg-[url('/contacts/linkedin-light.svg')] hover:!bg-[url('/contacts/linkedin-original.svg')] bg-cover w-[40px] h-[40px]" />
+            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin-light.svg')] dark:bg-[url('/contacts/linkedin-light.svg')] hover:!bg-[url('/contacts/linkedin.svg')] bg-cover w-[40px] h-[40px]" />
             <p className="font-normal text-gray-200">Linkedin</p>
           </Link>
           <Link href={ELinks.WHATSAPP} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
-            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/whatsapp-light.svg')] dark:bg-[url('/contacts/whatsapp-light.svg')] hover:!bg-[url('/contacts/whatsapp-original.svg')] bg-cover w-[40px] h-[40px]" />
+            <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/whatsapp-light.svg')] dark:bg-[url('/contacts/whatsapp-light.svg')] hover:!bg-[url('/contacts/whatsapp.svg')] bg-cover w-[40px] h-[40px]" />
             <p className="font-normal text-gray-200">WhatsApp</p>
           </Link>
         </div>
