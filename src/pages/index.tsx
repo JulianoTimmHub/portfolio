@@ -23,7 +23,7 @@ export default function Home({ }: any) {
                 <h1 className="text-5xl text-[#303446] dark:text-white m-2"><strong>Juliano</strong></h1>
                 <h1 className="text-5xl m-2 text-[#656783]"><strong>{'/>'}</strong></h1>
               </div>
-              <p className="text-xl text-[#303446] dark:text-white m-2">{translator('Desenvolvedor Full Stack profissional há mais de 2 anos.')}</p>
+              <p className="text-xl font-semibold text-[#303446] dark:text-white m-2">{translator('Desenvolvedor Full Stack profissional há mais de 2 anos.')}</p>
             </div>
           </div>
           <div className="w-6/12 flex items-center justify-center flex-col max-[640px]:hidden">

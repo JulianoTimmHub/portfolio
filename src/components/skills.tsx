@@ -4,7 +4,7 @@ import { useI18nContext } from '../hooks/useI18nContext';
 export const Skills = () => {
   const { translator, languageSelected } = useI18nContext();
 
-  const defaultClass = "cursor-pointer transition ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-cover w-[50px] h-[50px]";
+  const defaultClass = "cursor-pointer transition text-1xl font-semibold ease-in-out delay-50 hover:scale-125 duration-300 m-5 bg-cover w-[50px] h-[50px]";
 
   const skills = [
     { name: "Java", element: <div key="Java" className={`${defaultClass} bg-[url('/skills/java-dark.svg')] dark:bg-[url('/skills/java-light.svg')] hover:!bg-[url('/skills/java.svg')]`} /> },

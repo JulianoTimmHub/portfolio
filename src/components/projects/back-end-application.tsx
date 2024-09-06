@@ -10,7 +10,7 @@ export const BackEndApplication = () => {
     <div className="w-full flex items-center justify-evenly flex-nowrap max-[640px]:flex-col-reverse p-[1rem]">
       <div className="w-full px-6 max-[640px]:px-0 py-4 h-96 flex items-end justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:items-start max-[640px]:gap-[1rem]">
         <h4 className="font-bold text-xl text-[#efedea] mb-2">{translator('Api de controle financeiro pessoal')}</h4>
-        <p className="text-base text-right max-[640px]:text-left text-[#efedea]">
+        <p className="text-base font-semibold text-right max-[640px]:text-left text-[#efedea]">
           {translator('API de controle financeiro com funcionalidades de login, gerenciamento de receitas e despesas, acompanhamento de saldos e cadastro de metas. Desenvolvida com TypeScript, Nest.js, Prisma e MongoDB.')}
         </p>
         <div className="w-full flex items-center justify-center flex-row-reverse max-[1024px]:flex-col">

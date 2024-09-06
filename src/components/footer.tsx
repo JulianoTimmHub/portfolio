@@ -44,55 +44,58 @@ export const Footer = () => {
         <div className="w-full flex items-center justify-center gap-[3rem] max-[640px]:justify-between max-[640px]:gap-[0rem]">
           <Link href={ELinks.GITHUB} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
             <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/github-light.svg')] dark:bg-[url('/contacts/github-light.svg')] hover:!bg-[url('/contacts/github.svg')] bg-cover w-[40px] h-[40px]" />
-            <p className="font-normal text-gray-200">Github</p>
+            <p className="text-1xl font-semibold text-gray-200">Github</p>
           </Link>
           <Link href={ELinks.LINKEDIN} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
             <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/linkedin-light.svg')] dark:bg-[url('/contacts/linkedin-light.svg')] hover:!bg-[url('/contacts/linkedin.svg')] bg-cover w-[40px] h-[40px]" />
-            <p className="font-normal text-gray-200">Linkedin</p>
+            <p className="text-1xl font-semibold text-gray-200">Linkedin</p>
           </Link>
           <Link href={ELinks.WHATSAPP} target="_blank" className="flex items-center justify-center flex-col block p-6 max-[640px]:p-[0.5rem] border rounded-lg shadow bg-[#303446] border-gray-700 hover:bg-gray-700">
             <div className="cursor-pointer m-3 transition ease-in-out delay-50 hover:scale-125 duration-300 bg-[url('/contacts/whatsapp-light.svg')] dark:bg-[url('/contacts/whatsapp-light.svg')] hover:!bg-[url('/contacts/whatsapp.svg')] bg-cover w-[40px] h-[40px]" />
-            <p className="font-normal text-gray-200">WhatsApp</p>
+            <p className="text-1xl font-semibold text-gray-200">WhatsApp</p>
           </Link>
         </div>
         <form onSubmit={handleSubmit(sendEmail)} className="p-[5rem] max-[640px]:pl-[0rem] max-[640px]:pr-[0rem] max-[640px]:pt-[2rem] max-[640px]:pb-[2rem] space-y-8">
-          <p className="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl">{translator('Ou caso queira me enviar um email profissional.')}</p>
+          <p className="mb-8 lg:mb-16 font-light text-center text-white text-1xl font-semibold">{translator('Ou caso queira me enviar um email profissional.')}</p>
           <div>
-            <label htmlFor="email" className="block mb-2 font-medium text-white">{translator('Seu email')}</label>
+            <label htmlFor="email" className="block mb-2 text-1xl font-semibold text-white">{translator('Seu email')}</label>
             <input
               type="email"
               id="email"
               {...register("fromEmail")}
-              className="border border-gray-300 rounded-lg w-full p-2.5 dark:bg-[#303446] dark:border-gray-600"
+              className="border border-gray-300 rounded-lg w-full p-2.5 bg-[#303446] dark:border-gray-600"
               placeholder={translator('exemplo@gmail.com')}
               required
             />
           </div>
           <div>
-            <label htmlFor="subject" className="block mb-2 font-medium text-white">{translator('Assunto')}</label>
+            <label htmlFor="subject" className="block mb-2 text-1xl font-semibold text-white">{translator('Assunto')}</label>
             <input
               type="text"
               id="subject"
               {...register("subject")}
-              className="border border-gray-300 rounded-lg w-full p-2.5 dark:bg-[#303446] dark:border-gray-600"
+              className="border border-gray-300 rounded-lg w-full p-2.5 bg-[#303446] dark:border-gray-600"
               placeholder={translator('O que você gostaria de discutir?')}
               required
             />
-            {errors.subject && <p>{errors.subject?.message}</p>}
+            {errors.subject && <p className="text-white">{errors.subject?.message}</p>}
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="message" className="block mb-2 font-medium text-white">{translator('Sua mensagem')}</label>
+            <label htmlFor="message" className="block mb-2 text-1xl font-semibold text-white">{translator('Sua mensagem')}</label>
             <textarea
               id="message"
               {...register("message")}
               rows={6}
-              className="block p-2.5 w-full rounded-lg border border-gray-300 dark:bg-[#303446] dark:border-gray-600"
+              className="border border-gray-300 rounded-lg w-full p-2.5 bg-[#303446] dark:border-gray-600"
               placeholder={translator('Olá Juliano, tudo bem?')}
               required
             />
-            {errors.message && <p>{errors.message?.message}</p>}
+            {errors.message && <p className="text-white">{errors.message?.message}</p>}
           </div>
-          <button type="submit" className="py-3 px-5 font-medium text-center text-white rounded-lg bg-[#0d6efd] hover:bg-[#0b5ed7] sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700">{translator('Enviar mensagem')}</button>
+          <button type="submit" className="py-3 px-5 text-1xl font-semibold text-center text-white rounded-lg bg-[#0d6efd] hover:bg-[#0b5ed7] sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:hover:bg-primary-700">{translator('Enviar mensagem')}</button>
+          <p className="text-sm text-gray-500 dark:text-gray-300 text-left">
+            © 2024 <a href="https://flowbite.com/">Juliano Henrique Timm</a>. {translator('Todos os direitos reservados.')}
+          </p>
         </form>
       </div>
       {openSnackbarEmail && (

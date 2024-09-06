@@ -14,7 +14,7 @@ export const FrontEndApplication = () => {
         </div>
         <div className="w-full px-6 max-[640px]:px-0 py-4 h-96 flex items-start justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:gap-[1rem]">
           <h4 className="font-bold text-xl text-[#efedea] mb-2">{translator('Login Boilerplate')}</h4>
-          <p className="text-base text-[#efedea]">
+          <p className="text-base font-semibold text-[#efedea]">
             {translator('Um boilerplate de login para sistemas web, criado com React, TypeScript e Next.js. Ele possui funcionalidades essenciais como cadastro de usuários, alteração de senhas e login.')}
           </p>
           <div className="w-full flex items-center justify-center flex-nowrap max-[1024px]:flex-col">
@@ -47,7 +47,7 @@ export const FrontEndApplication = () => {
 
       <div className="w-full flex items-center justify-evenly flex-nowrap max-[640px]:flex-col-reverse p-[1rem]">
         <div className="w-full px-6 max-[640px]:px-0 py-4 h-96 flex items-end justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:items-start max-[640px]:gap-[1rem]">
-          <h4 className="font-bold text-xl text-[#efedea] mb-2">{translator('Portfolio')}</h4>
+          <h4 className="font-bold font-semibold text-xl text-[#efedea] mb-2">{translator('Portfolio')}</h4>
           <p className="text-base text-right max-[640px]:text-left text-[#efedea]">
             {translator('Um portfólio no qual viso mostrar minhas habilidades e experiências, desenvolvido com React, TypeScript, Next.js e TailwindCSS. Ele oferece uma visão clara de quem sou e dos meus conhecimentos.')}
           </p>

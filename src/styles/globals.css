@@ -27,7 +27,7 @@ ol, ul, li, a {
   text-decoration: none;
 }
 
-input {
+input, textarea {
   color: #ffffff;
 }
 

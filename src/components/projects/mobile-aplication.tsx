@@ -13,7 +13,7 @@ export const MobileApplication = () => {
       </div>
       <div className="w-full px-6 max-[640px]:px-0 py-4 h-96 flex items-start justify-between flex-col max-[640px]:h-[100%] max-[640px]:justify-start max-[640px]:gap-[1rem]">
         <h4 className="font-bold text-xl text-[#efedea] mb-2">{translator('Meu banco fácil')}</h4>
-        <p className="text-base text-[#efedea]">
+        <p className="text-base font-semibold text-[#efedea]">
           {translator('Aplicativo mobile de controle financeiro com recursos de login, gestão de receitas e despesas, monitoramento de saldos e criação de metas. Criado com React Native, TypeScript e Expo.')}
         </p>
         <div className="w-full flex items-center justify-center flex-nowrap max-[1024px]:flex-col">
